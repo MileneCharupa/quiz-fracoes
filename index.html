@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz de Frações 🍕🍫</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Tela inicial -->
+    <div id="startScreen" class="start-screen">
+      <h1>OLÁ 6°ANO - Bem-vindos ao Quiz de Frações 🍕🍫</h1>
+      <p>Prontos para testar seus conhecimentos? Vamos começar!</p>
+      <button id="startButton">Vamos Começar!</button>
+    </div>
+
+    <!-- Quiz (escondido inicialmente) -->
+    <div id="quiz" style="display:none;">
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <button id="nextButton">Próxima ➡️</button>
+      <div id="feedback" style="text-align:center; margin-top:20px; font-size:18px;"></div>
+    </div>
+
+    <div id="result"></div>
+
+    <!-- Rodapé da marca -->
+    <footer id="signature" style="text-align:center; margin-top: 40px; font-style: italic; color: #666;">
+      De tutora Milene, para a turma do 6º ano
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

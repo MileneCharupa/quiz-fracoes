@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo geral do body */
+body {
+  background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Container principal do quiz e tela inicial */
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animação fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #FF6F61;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Tela inicial */
+.start-screen {
+  text-align: center;
+}
+
+.start-screen h1 {
+  color: #FF6F61;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.start-screen p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#startButton {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #38B000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#startButton:hover {
+  background-color: #2D8700;
+}
+
+/* Pergunta */
+.question {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container das opções */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Botões das opções */
+.options button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background-color: #FFE066;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.options button:hover {
+  background-color: #FFD43B;
+}
+
+/* Botão Próxima */
+#nextButton {
+  display: none;
+  margin: 30px auto 0;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #38B000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#nextButton:hover {
+  background-color: #2D8700;
+}
+
+/* Resultado final */
+#result {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+#signature {
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  color: #666666;
+  font-size: 16px;
+}
